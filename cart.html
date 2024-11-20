@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Home</a>
+        </nav>
+    </header>
+
+    <div class="cart-items">
+        {% for item in cart %}
+            <div class="cart-item">
+                <h3>{{ item.name }}</h3>
+                <p>${{ item.price }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="total">
+        <h2>Total: ${{ total }}</h2>
+        <a href="{{ url_for('checkout') }}">Checkout</a>
+    </div>
+</body>
+</html>
