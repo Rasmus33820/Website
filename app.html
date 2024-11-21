@@ -1,1 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>App Title</title>
 
+  <!-- Linking to external CSS file (if any) -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Inline styles (optional, can be moved to a separate CSS file) -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .content {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header section -->
+  <header>
+    <h1>Welcome to the App!</h1>
+  </header>
+
+  <!-- Main content area -->
+  <div class="container">
+    <div class="content">
+      <h2>App Content</h2>
+      <p>This is the main content of the app. You can add your app's specific features here.</p>
+     
+      <!-- Button Example -->
+      <button onclick="showMessage()">Click Me</button>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <p>&copy; 2024 Your App Name. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Linking to external JS file (if any) -->
+  <script src="script.js"></script>
+
+  <!-- Inline JavaScript -->
+  <script>
+    function showMessage() {
+      alert("Hello! You've clicked the button.");
+    }
+  </script>
+
+</body>
+</html>
